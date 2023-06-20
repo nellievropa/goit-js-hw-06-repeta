@@ -2,8 +2,10 @@ body {
     font-family: "Roboto";
     line-height: 1.5;
     color: #2a2a2a;
+    /* text-decoration: none; */
 
 }
+
 .magic-btn {
     display: inline-flex;
     justify-content: center;
@@ -23,7 +25,7 @@ body {
     margin-left: 10px;
     font-size: 24px;
 }
-.site-nav {
+.site-nav__link {
     text-decoration: none;
 }
 .site-nav__link {
@@ -35,14 +37,14 @@ body {
     text-decoration: underline;
 }
 
-.site-nav__item--current {
+.site-nav__link--current {
     color: tomato;
 }
 
 .color-picker__option {
 display: inline-block;
-width: 48px;
-height: 48px;
+width: 64px;
+height: 64px;
 margin: 4px;
 border: none;
 outline: none;
