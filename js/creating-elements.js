@@ -54,8 +54,8 @@ navLinkEl.classList.add('site-nav__link');
 navLinkEl.textContent = 'Особистий кабінет';
 navLinkEl.href = '/profile';
 
-// console.log(navItemEl);
-// console.log(navLinkEl);
+console.log(navItemEl);
+console.log(navLinkEl);
 
 // ми хочемо додати ці 2 елементи в UL , але разом - це важливо
 // посилання вкладаємо в Лі, а потім вже Лі додаємо в UL

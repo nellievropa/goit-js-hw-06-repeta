@@ -1,7 +1,7 @@
 // Створюємо і додаємо колекції кнопок, що відповідають кольорам
 
 
-const colorPickerOption = [
+const colorPickerOptions = [
     { label: 'red', color: '#F44336'},
     { label: 'green', color: '#4CAF50'},
     { label: 'blue', color: '#2196F3'},
@@ -69,7 +69,7 @@ const makeColorPickerOptions = options => {
     return options.map(option => {
         // в option приходить такий об'єкт   { label: 'red', color: '#F44336'},
         const buttonEl = document.createElement('button');
-        buttonEl.type = "button";
+        buttonEl.type = 'button';
         // додаємо клас із CSS
         buttonEl.classList.add('color-picker__option');
         buttonEl.textContent = option.label;
@@ -79,6 +79,7 @@ const makeColorPickerOptions = options => {
     });
     
 };
+
 const elements = makeColorPickerOptions(colorPickerOptions);
 colorPickerContainerEl.append(...elements);
 
