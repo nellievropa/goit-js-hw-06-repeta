@@ -23,7 +23,7 @@ const colorPickerOption = [
 
 // console.log(buttonEl);
 
-const colorPickerContainerEl = document.querySelector('.js-color-picker');
+// const colorPickerContainerEl = document.querySelector('.js-color-picker');
 // const elements = colorPickerOptions.map(option => {
 //     // в option приходить такий об'єкт   { label: 'red', color: '#F44336'},
 //      const buttonEl = document.createElement('button');
@@ -64,7 +64,7 @@ const colorPickerContainerEl = document.querySelector('.js-color-picker');
 
 
 // напишемо ФУНКЦІЮ, яка отримує масив данних для створення розмітки колорпікера
-
+const colorPickerContainerEl = document.querySelector('.js-color-picker');
 const makeColorPickerOptions = options => {
     return options.map(option => {
         // в option приходить такий об'єкт   { label: 'red', color: '#F44336'},
