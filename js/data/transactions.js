@@ -1,0 +1,38 @@
+export default [
+    {
+        id: '758a52892- 358e-4df55-b222-a178969525fdfd',
+        amount: '179.87',
+        date: '2021-02-01T22:00:00.0002',
+        business: 'Began-DuBoque',
+        name: 'Auto Loan',
+        type: 'deposit',
+        account: '1234546789',
+    },
+    {
+        id: '758a44492- 358e-4df55-b222-a178969525fdfd',
+        amount: '137.87',
+        date: '2021-08-05T22:00:00.0002',
+        business: 'Travel and fly',
+        name: 'BMW Loan',
+        type: 'invoice',
+        account: '3258767890',
+    },
+    {
+        id: '6582cv92- 358e-4df55-b222-a178969525fdfd',
+        amount: '358.87',
+        date: '2021-03-03T22:00:00.0002',
+        business: 'Beauty Factorie',
+        name: 'Farfalla',
+        type: 'withdrawal',
+        account: '5412877389',
+    },
+    {
+        id: '758a52892- 358e-4df55-b222-a178969525fdfd',
+        amount: '444.87',
+        date: '2021-01-02T22:00:00.0002',
+        business: 'Personal help',
+        name: 'Personal account',
+        type: 'withdrawal',
+        account: '2224187512',
+    },
+]

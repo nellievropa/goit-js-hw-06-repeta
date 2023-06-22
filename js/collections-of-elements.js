@@ -10,7 +10,7 @@ const colorPickerOptions = [
     { label: 'indigo', color: '#3F5185'},
 ];
 
-// const option = colorPickerOption[2];
+// const option = colorPickerOptions[2];
 
 // const buttonEl = document.createElement('button');
 // buttonEl.type = "button";
