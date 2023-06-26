@@ -19,16 +19,16 @@ const refs = {
 
 // перша подия input
 
-refs.input.addEventListener('focus', onInputFocus);
+// refs.input.addEventListener('focus', onInputFocus);
 
-function onInputFocus() {
-    console.log('input отримав фокус - подія focus');
-    };
+// function onInputFocus() {
+//     console.log('input отримав фокус - подія focus');
+//     };
 
-refs.input.addEventListener('blur', onInputBlur);
-function onInputBlur() {
-    console.log('input загубив фокус - подія blur');
-};
+// refs.input.addEventListener('blur', onInputBlur);
+// function onInputBlur() {
+//     console.log('input загубив фокус - подія blur');
+// };
 
 // повісили слухателя на зміни
 // refs.input.addEventListener('change', onInputChange);
@@ -44,21 +44,59 @@ function onInputBlur() {
 // refs.input.addEventListener('input', onInputChange);
 
 // щоб виконати нашу задачу: щоб змінювалось значення спану!
-refs.input.addEventListener('input', onInputChange);
+// refs.input.addEventListener('input', onInputChange);
 
-function onInputChange(event) {
-console.log(event.currentTarget.value);
-refs.nameLable.textContent = event.currentTarget.value;
-}
+// function onInputChange(event) {
+// console.log(event.currentTarget.value);
+// refs.nameLable.textContent = event.currentTarget.value;
+// }
 // span имеет только textContent!!!!
 
 // кнопка повинна активуватись тільки коли чекнутий чебокс
 // для чекбоксів і радіобатонів використовується подія 'change'
-refs.licenseCheckbox.addEventListener('change', onLicenseChange)
+// refs.licenseCheckbox.addEventListener('change', onLicenseChange)
 
-function onLicenseChange(event) {
-    console.log(event.currentTarget.checked);  
-    console.log('refs.disabled:', refs.btn.disabled);
+// function onLicenseChange(event) {
+//     console.log(event.currentTarget.checked);
+//     console.log('refs.disabled:', refs.btn.disabled);
 //  кнопка вимкнена     коли чекбокс НЕ активна
-      refs.btn.disabled = !event.currentTarget.checked;
+//       refs.btn.disabled = !event.currentTarget.checked;
+// }
+
+// input
+
+
+// const userName = document.querySelector('.js-input');
+
+// userName.addEventListener('change', onInput2);
+
+// function onInput2(event) {
+//     console.log(event.currentTarget.value);
+
+// }
+
+// FORM TO SUBMIT
+
+const userForm = document.querySelector('.js-form');
+
+userForm.addEventListener('submit', onSubmit);
+
+function onSubmit(event) {
+    // preventDefault ПРИБИРАЄ ТІ НАЛАШТУВАННЯ , що були за замовчуванням
+    event.preventDefault()
+    //додавши  name ми додали инпутам ключи
+    // робим деструктуризацыю форми
+    const { userName, userEmail, userAge } = event.currentTarget.elements;
+    // console.log(userName.value);
+    // console.log(userEmail.value);
+    // console.log(userAge.value);
+
+    // щоб відправити дані на бекенд формуєму data
+
+    const data = {
+        name: userName.value,
+        email: userEmail.value,
+        age: userAge.value,
+    }
+    console.log(data);
 }
