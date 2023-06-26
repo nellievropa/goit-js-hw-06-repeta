@@ -50,3 +50,10 @@ border: none;
 outline: none;
 cursor: pointer;
 }
+
+.btn-container {
+    width: 52px;
+    height: 52px;
+    background-color: aqua;
+  }
+  
