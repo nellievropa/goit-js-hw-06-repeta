@@ -19,16 +19,16 @@ const refs = {
 
 // перша подия input
 
-// refs.input.addEventListener('focus', onInputFocus);
+refs.input.addEventListener('focus', onInputFocus);
 
-// function onInputFocus() {
-//     console.log('input отримав фокус - подія focus');
-//     };
+function onInputFocus() {
+    console.log('input отримав фокус - подія focus');
+    };
 
-// refs.input.addEventListener('blur', onInputBlur);
-// function onInputBlur() {
-//     console.log('input загубив фокус - подія blur');
-// };
+refs.input.addEventListener('blur', onInputBlur);
+function onInputBlur() {
+    console.log('input загубив фокус - подія blur');
+};
 
 // повісили слухателя на зміни
 // refs.input.addEventListener('change', onInputChange);
