@@ -32,6 +32,18 @@ function onClearOutput() {
     refs.output.textContent = '';
 }
 
+// приклад від Рисича - квадратик, що зникає
+const container = document.querySelector('.js-container')
+document.addEventListener('keydown', onKey);
+
+function onKey(event) {
+    console.log(event.code)
+    if(event.code === "Escape") {
+container.classList.toggle('tog')
+    }
+}
+
+
 
 // Події миші
 

@@ -75,7 +75,7 @@ function onInputBlur() {
 
 // }
 
-// FORM TO SUBMIT
+// FORM TO SUBMIT Рисич
 
 const userForm = document.querySelector('.js-form');
 
@@ -100,3 +100,11 @@ function onSubmit(event) {
     }
     console.log(data);
 }
+
+
+// від Рисича
+
+const cars = [{
+    id: 1,
+    car: 'Honda '
+}]

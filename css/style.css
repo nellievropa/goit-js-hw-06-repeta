@@ -56,6 +56,10 @@ cursor: pointer;
     height: 52px;
     background-color: aqua;
   }
+.tog {
+  display: none;
+}
+
 
 .box {
     /* position: absolute; */
