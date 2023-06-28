@@ -14,8 +14,8 @@ form.addEventListener('submit', onFormSubmit);
 function onFormSubmit(event) {
     event.preventDefault();
 
-    // const formElements = event.currentTarget.elements
-    // console.log(formElements);
+    const formElements = event.currentTarget.elements
+    console.log(formElements);
 
     // спочатку звертаємось до посилань, потім берем у них VALUE
 
