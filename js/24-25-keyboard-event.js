@@ -37,8 +37,9 @@ const container = document.querySelector('.js-container')
 document.addEventListener('keydown', onKey);
 
 function onKey(event) {
-    console.log(event.code)
-    if(event.code === "Escape") {
+    // console.log(event.code)
+    // якщо є 2 умови
+    if(event.code === "Escape" || event.code === "Enter") {
 container.classList.toggle('tog')
     }
 }
@@ -51,10 +52,10 @@ const boxRef = document.querySelector('.js-box');
 
 // працюють, коли мишка в зоні квадрату чи коли виходить з зони квадрату
 // діє і на дітей і на потомків
-boxRef.addEventListener('mouseenter', onMouseEnter);
-boxRef.addEventListener('mouseleave', onMouseLeave);
+// boxRef.addEventListener('mouseenter', onMouseEnter);
+// boxRef.addEventListener('mouseleave', onMouseLeave);
 // болтлива подія, бо надто часто відбувається!!!!
-boxRef.addEventListener('mousemove', onMouseMove);
+// boxRef.addEventListener('mousemove', onMouseMove);
 
 // це аналог ховера- колір зміниться при наведенні миші і повернеться назад,
 // коли її прибрати з квадрата
@@ -74,5 +75,5 @@ function onMouseMove(event) {
 
 // 'mouseover' працює тільки над батьківським елементом і НЕ працює над дітьми!
 // 'mouseout'
-boxRef.addEventListener('mouseover', onMouseEnter);
-boxRef.addEventListener('mouseout', onMouseLeave);
+// boxRef.addEventListener('mouseover', onMouseEnter);
+// boxRef.addEventListener('mouseout', onMouseLeave);

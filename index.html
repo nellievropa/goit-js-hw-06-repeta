@@ -205,7 +205,7 @@
 
 <!-- 26 Modal window -->
 
-<button class="button" data-action="open-modal">Open modal window</button>
+<!-- <button class="button" data-action="open-modal">Open modal window</button>
 
 <div class="backdrop js-backdrop">
    <div class="modal">
@@ -219,7 +219,33 @@
             Закрити            
         </button>
    </div>
-</div>
+</div> -->
+
+<!-- CER-EXMple -->
+<!-- щоб мати змозу сортувати список машин створюємо форму -->
+<!-- в input будемо вводити наші запроси -->
+<!-- select нам дасть змогу робити вибір  -->
+<!-- в селекті робимо option і ім'я йому даємо таке, як в розмітці -->
+<form action="submit">
+    <input type="text" name="query">
+    <select name="select" >
+        <option value="car">Марка</option>
+    </select>
+</form>
+<!-- data-id="" відповідає ID із JS-->
+<ul class="js-list">
+    <li data-id=""><img src="" alt="">
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+    </li>
+    <!-- <li data-id=""><img src="" alt=""><h2></h2><h3></h3><p></p></li>
+    <li data-id=""><img src="" alt=""><h2></h2><h3></h3><p></p></li>
+    <li data-id=""><img src="" alt=""><h2></h2><h3></h3><p></p></li>
+    <li data-id=""><img src="" alt=""><h2></h2><h3></h3><p></p></li> -->
+</ul>
+
+
 
     <!-- <script src="./js/query-selector-js.js" type="module"></script> -->
     <!-- <script src="./js/properties-js.js" type="module"></script> -->
@@ -233,8 +259,9 @@
     <!-- <script src="./js/2-event-listener.js" type="module"></script> -->
     <!-- <script src="./js/22-forms.js" type="module"></script> -->
     <!-- <script src="./js/23-input-enents.js" type="module"></script> -->
-    <script src="./js/24-25-keyboard-event.js" type="module"></script>
+    <!-- <script src="./js/24-25-keyboard-event.js" type="module"></script> -->
     <!-- <script src="./js/26-modai.js" type="module"></script> -->
+    <script src="./js/cars-exm.js" type="module"></script>
 </body>
 </html>
 

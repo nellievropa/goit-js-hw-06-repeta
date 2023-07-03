@@ -35,13 +35,14 @@ const removeListenerBtn = document.querySelector('.js-remove-listener');
 //     console.log('Click');
 // });
 
-// addListenerBtn.addEventListener('click', () => {
-//     console.log('Вішаю слухача події на цільову кнопку');
+addListenerBtn.addEventListener('click', (event) => {
+    console.log('Вішаю слухача події на цільову кнопку');
+   
 
-//     targetBtn.addEventListener('click', () => {
-//         console.log('Click по цільовій кнопці');
-//     });
-// });
+    targetBtn.addEventListener('click', () => {
+        console.log('Click по цільовій кнопці');
+    });
+});
 
 // removeListenerBtn.addEventListener('click', () => {
 //     console.log('Знімаю слухача події з цільової кнопки');
@@ -155,31 +156,31 @@ function onTargetBTNClick () {
 // Приклад коли багато подібних абзаців, а змінні названі правильно і нічого міняти не треба!
 // бо код працює!
 
-const title = document.querySelector('.js-title');
-const title1 = document.querySelector('.js-title1');
-const title2 = document.querySelector('.js-title2');
-const MaxLength = 13;
-const totalLength = MaxLength + 3;
-title.addEventListener('click', onClick);
-title1.addEventListener('click', onClick);
-title2.addEventListener('click', onClick);
+// const title = document.querySelector('.js-title');
+// const title1 = document.querySelector('.js-title1');
+// const title2 = document.querySelector('.js-title2');
+// const MaxLength = 13;
+// const totalLength = MaxLength + 3;
+// title.addEventListener('click', onClick);
+// title1.addEventListener('click', onClick);
+// title2.addEventListener('click', onClick);
 
-function onClick(event) {
-    const innerTitle = event.currentTarget;
-    const str = innerTitle.textContent.slice(0,MaxLength);
+// function onClick(event) {
+//     const innerTitle = event.currentTarget;
+//     const str = innerTitle.textContent.slice(0,MaxLength);
 
-    if(innerTitle.textContent.length > totalLength) {
-        const remainder = innerTitle.textContent.slice(MaxLength);
-        innerTitle.setAttribute('data-title', remainder);
-        innerTitle.textContent = str+'...';
-    } else {
-// якщо рядок коротший за 13 символів
-        const  remainder = innerTitle.dataset.title;
-        if (remainder) {
-            innerTitle.textContent = str + remainder;
-            console.log(remainder);
-        }
+//     if(innerTitle.textContent.length > totalLength) {
+//         const remainder = innerTitle.textContent.slice(MaxLength);
+//         innerTitle.setAttribute('data-title', remainder);
+//         innerTitle.textContent = str+'...';
+//     } else {
+// // якщо рядок коротший за 13 символів
+//         const  remainder = innerTitle.dataset.title;
+//         if (remainder) {
+//             innerTitle.textContent = str + remainder;
+//             console.log(remainder);
+//         }
       
-        }              
-};
+//         }              
+// };
 // обов'язково використовуємо event and currentTarget!!!
