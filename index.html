@@ -226,11 +226,17 @@
 <!-- в input будемо вводити наші запроси -->
 <!-- select нам дасть змогу робити вибір  -->
 <!-- в селекті робимо option і ім'я йому даємо таке, як в розмітці -->
-<form action="submit">
+<div>
+    <h2>Обрані авто</h2>
+    <ul class="js-favorite-list"></ul>
+</div>
+<form action="submit" class="js-search-form">
     <input type="text" name="query">
     <select name="select" >
         <option value="car">Марка</option>
+        <option value="type">Модель</option>
     </select>
+    <button>Пошук</button>
 </form>
 <!-- data-id="" відповідає ID із JS-->
 <ul class="js-list">

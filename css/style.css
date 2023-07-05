@@ -5,6 +5,17 @@ body {
     /* text-decoration: none; */
 
 }
+ul {
+  list-style: none;
+}
+/* на класи розмітку не даємо -це виключення тільки в цей раз */
+.js-favorite {
+  width: 30px;
+  height: 30px;
+}
+.js-favorite-active {
+  background-color: gold;
+}
 
 .magic-btn {
     display: inline-flex;
