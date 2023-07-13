@@ -5,9 +5,29 @@ body {
     /* text-decoration: none; */
 
 }
+/* 07 cars */
 ul {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
+li {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+img {
+  width: 200px;
+  height: 150px;
+}
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+
 /* на класи розмітку не даємо -це виключення тільки в цей раз */
 .js-favorite {
   width: 30px;
